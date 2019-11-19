@@ -1,0 +1,14 @@
+1st approach:
+
+1) get the data from the api
+2) get the food trucks open when the program is run
+  2.1# get the current time and filter data that falls into that time slot.
+3) arrange the food trucks alphabetically.
+4) display results in a page for 10 trucks at a time with Name and address of the food truck.
+
+2nd approach:
+
+1) Get the current hour in 12hour format and day of week. 
+2) Make the api call with time and day so that it will return all the food truck open at that time.
+3) arrange the food trucks alphabetically.
+4) display results in a page for 10 trucks at a time with Name and address of the food truck.
