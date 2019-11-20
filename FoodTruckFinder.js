@@ -1,13 +1,9 @@
-// to run locally, first install node and npm. then:
-// $ npm install request
-// $ npm install inquirer
-// then run node FoodTruckFinder.js
 let request = require("request");
 let inquirer = require("inquirer");
 
 /**
  * This method return current day and time
-**/
+ **/
 const getCurrentHourAndDay = () => {
     let currentHourAndDay = new Date().toLocaleTimeString("en-US", {
         hour: "2-digit",
@@ -44,7 +40,9 @@ const displayFoodTruckList = (foodTruckList, index) => {
         Address: location
     }));
     availableTruckList.sort((a, b) => a.Name.localeCompare(b.Name));
-    console.log(availableTruckList);
+    for (let i in availableTruckList) {
+        console.log("NAME ADDRESS: ", availableTruckList[i].Name, availableTruckList[i].Address, "\n");
+    }
 }
 
 /**
