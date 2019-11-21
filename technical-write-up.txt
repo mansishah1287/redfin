@@ -1,0 +1,30 @@
+Summary of the web application: A single page application that can provide available food truck open at the current time with Name and address.
+
+Architecture of the web application:
+1) A client UI where user can see list of available food truck.
+2) A server that make an call to api and return results to the client.
+3) Cache the results so that when any other user or same user request the same, instead of making call, 
+    just send the results. It will help in performance of the site.
+
+To establish this flow:
+1) We need to organize our files into folders.
+2) Try to have clear separation of concern.
+3) Make sure to have business logic and api routes in a different files.
+4) Think of reusability while designing. Modularity and Composition are the key parts of designing.
+5) Include unit testing and maximize the code coverage rate.
+6) Add proper logs to the application.
+7) Monitor the front-end and backend application using different tools to manage performance of the site.
+
+The folder structure can be:
+application
+   config
+   src
+   	- containers
+   	- components
+   	- servers
+   	- app.js
+   	- routes
+   	- service	
+
+   test
+
